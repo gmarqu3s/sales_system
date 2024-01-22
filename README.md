@@ -8,8 +8,10 @@ sudo service docker start
 
 execute os seguintes comandos no diretório(montando imagem):
 sales_system-main/phpdocker/php-fpm$ docker run --name sales_system -d mysql
+/sales_system-main/phpdocker/php-fpm$ docker-compose up -d
 
-docker ps -> para visualizar as configs
+docker ps -a 
+para visualizar as configs
 
 criando banco de dados:
 docker exec -i sales_system-db-1 mysql -uroot -test </home/gmarques/projects/sales_system/config_db.sql
