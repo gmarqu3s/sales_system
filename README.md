@@ -23,6 +23,7 @@ criar o container
 criando banco de dados:
 mysql> docker exec -i sales_system-db-1 mysql -uroot -psua_senha seu_banco_de_dados <\sales_system-main\config_db.sql;
 
+| CASO NAO CONSIGA EXECUTAR O CONFIG_DB, ABRA O ARQUIVO E COPE E COLE AS QUERYS DENTRO DO CONTAINER. |
 OBS. informe o caminho que esta o config_db.sql
 Agora o banco de dados está criado.
 
