@@ -15,9 +15,13 @@ execute os seguintes comandos no diretório(montando imagem):
 docker ps -a | 
 
 para visualizar as configs |
+criar o container 
+| sales_system-main/phpdocker/php-fpm$ docker run -d --name sales_system-db-1 -e MYSQL_ROOT_PASSWORD=sua_senha -p 3306:3306 mysql:latest |
+
+| acessar container | /sales_system-main/phpdocker/php-fpm$ docker exec -it sales_system-db-1 mysql -uroot -p |
 
 criando banco de dados:
-docker exec -i sales_system-db-1 mysql -uroot -test </home/gmarques/projects/sales_system/config_db.sql
+mysql> docker exec -i sales_system-db-1 mysql -uroot -psua_senha seu_banco_de_dados <\sales_system-main\config_db.sql;
 
 OBS. informe o caminho que esta o config_db.sql
 Agora o banco de dados está criado.
