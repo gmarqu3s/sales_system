@@ -6,8 +6,8 @@ ou vida wsl: sudo apt install -y docker.io
 para dar start:
 sudo service docker start
 
-execute os seguintes comandos(montando imagem):
-docker run --name sales_system -d mysql
+execute os seguintes comandos no diretório(montando imagem):
+sales_system-main/phpdocker/php-fpm$ docker run --name sales_system -d mysql
 
 docker ps -> para visualizar as configs
 
