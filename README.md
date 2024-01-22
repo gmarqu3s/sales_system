@@ -7,10 +7,13 @@ para dar start:
 sudo service docker start
 
 execute os seguintes comandos no diretório(montando imagem):
+
 sales_system-main/phpdocker/php-fpm$ docker run --name sales_system -d mysql
+
 /sales_system-main/phpdocker/php-fpm$ docker-compose up -d
 
 docker ps -a 
+
 para visualizar as configs
 
 criando banco de dados:
