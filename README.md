@@ -4,9 +4,9 @@ Instale o Docker: https://www.docker.com/get-started
 ou vida wsl: sudo apt install -y docker.io
 
 para dar start:
-sudo service docker start
+service docker start
 
-execute os seguintes comandos no diretório(montando imagem):
+Subindo o container(montando imagem):
 1 - docker run --name sales_system -d mysql
 2 - docker compose up -d
   2.2 - docker ps (para visualizar status e configs)
