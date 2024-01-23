@@ -15,9 +15,12 @@ Criando banco de dados(O comando deve ser executado no mesmo diretório do arqui
 1 - docker exec -i (nome do container do banco) mysql -uroot -ptest < config_db.sql
 
 Acessar container
-1 - docker exec -it sales_system-db-1 mysql -uroot -ptest
-
-(CASO NAO CONSIGA EXECUTAR O CONFIG_DB, ABRA O ARQUIVO E COPIE E COLE AS QUERYS DO CONFIG_DB DENTRO DO CONTAINER.)
+1 - docker exec -it sales_system-main-db-1 bash
+  1.2 - mysql -uroot -ptest
+    2 - Agora para vericar se foi criada a database, execute: show databases;
+      2.1 - O nome "sales_system" deve aparecer. 
+        2.2 - CASO NAO CONSIGA EXECUTAR O CONFIG_DB, ABRA O ARQUIVO E COPIE E COLE AS QUERYS DO CONFIG_DB DENTRO DO CONTAINER.
+          2.3 - execute 2x para sair do container: exti
 
 Informe a seguir o link para acessar o sistema: http://localhost:8000/sistema_de_vendas.php
 
